@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sinethemba Kunene",
+      "email": "sinethemba2@gmail.com",
+      "phone": "060-205-15847"
+    },
+    {
+        "id": 2,
+        "name": "Albertinah Leshike",
+        "email": "Albertinah@gmail.com",
+        "phone": "060-205-44444"
+      }
+   
+  ],
+  "bookings": [
+    {
+      "Listingid": 1,
+      "StartDate": "2025-02-05",
+      "EndDate": "2025-02-015",
+      "userId": 1
+    }
+  ],
+  "listings": [
+    {
+        "id": 1,
+        "bath_num": 3,
+        "bed_num": 4,
+        "zip": 23456,
+        "address": "Shomolu Street",
+        "city": "Ikeja",
+        "street": "Agege",
+        "price": 2000,
+        "sq_ft": 4.2,
+        "email": "test@test.com",
+        "userId": 2
+  }
+]
+}
