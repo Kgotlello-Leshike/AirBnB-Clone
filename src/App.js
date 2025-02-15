@@ -5,6 +5,7 @@ import Header from './components/layout/Header';
 import Home from "./components/Home"
 import Footer from "./components/layout/Footer"
 import SearchPage from './components/SearchPage';
+import Modal from './components/Modal'
 
 const  App = () => {
   return (
@@ -12,13 +13,16 @@ const  App = () => {
       <Router>
      <Header />
      <Switch>
-      <Route path='/' exact>
+      <Route path="/" exact>
       <Home />
       </Route>
-      <Route path='/search' exact>
+      <Route path="/search" exact>
       <SearchPage />
       </Route>
      </Switch>
+     <Route path="/">
+      <Modal />
+     </Route>
      <Footer />
      </Router>
 

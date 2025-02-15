@@ -1,11 +1,22 @@
 import React from 'react'
+import {useDispatch, useSelector} from 'react-redux'
 import SearchIcon from "@mui/icons-material/Search";
 import LanguageIcon from "@mui/icons-material/Language";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Avatar } from "@mui/material";
+import Login from '../Login'
 import "./Header.css";
+import {openModal} from '../../action/modalAction'
 
 const Header = () => {
+  const dispatch = useDispatch()
+
+const userLogin = useSelector(state => state.userLogin)
+const {userInfo} = userLogin;
+
+  const openModalHandler = () => {
+    dispatch(openModal("open", <Login /> ))
+  }
   return (
     <div className='header'>
         <img
@@ -23,7 +34,8 @@ const Header = () => {
         <LanguageIcon />
         <div className="dropdown">
         <ExpandMoreIcon className="dropbtn" />
-          {/* <div className="dropdown-content">
+        <span onClick={openModalHandler}> Log in</span>
+          <div className="dropdown-content">
             {userInfo ? (
           <>
           <span>Account</span>
@@ -32,14 +44,14 @@ const Header = () => {
            ): ( 
           <>
           <span>Sign Up</span>
-          <span onClick={openModalHandle}>Log in</span>
+          <span onClick={openModalHandler}>Log in</span>
           <span>Help</span>
           </>
           )}
         
-          {/* </div> */}
-        </div> */
-        {/* <span onClick={openModalHandle}>Log In</span> */}
+          </div>
+        </div>
+        {<span onClick={openModalHandler}>Log In</span>}
         <Avatar />
       </div>
     </div>

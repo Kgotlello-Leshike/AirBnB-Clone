@@ -25,6 +25,9 @@
   "listings": [
     {
         "id": 1,
+        "img":"https://a0.muscache.com/im/pictures/86b05b1e-d78b-482f-bf43-47ab51cc1cd8.jpg?im_w=1200",
+        "title": "Entire Homes",
+        "description":"Comfortable private places with room for friends or family.",
         "bath_num": 3,
         "bed_num": 4,
         "zip": 23456,
@@ -35,6 +38,23 @@
         "sq_ft": 4.2,
         "email": "test@test.com",
         "userId": 2
-  }
+  },
+
+  {
+    "id": 2,
+    "img":"https://a0.muscache.com/im/pictures/86b05b1e-d78b-482f-bf43-47ab51cc1cd8.jpg?im_w=1200",
+    "title": "Entire Homes",
+    "description":"Comfortable private places with room for friends or family.",
+    "bath_num": 3,
+    "bed_num": 4,
+    "zip": 23456,
+    "address": "Shomolu Street",
+    "city": "Ikeja",
+    "street": "Agege",
+    "price": 2000,
+    "sq_ft": 4.2,
+    "email": "test@test.com",
+    "userId": 2
+}
 ]
 }

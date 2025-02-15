@@ -1,14 +1,14 @@
 #Get all users
-GET http://localhost:5000/users
+GET http://localhost:3000/users
 ########
 
 #Get a single user
-GET http://localhost:5000/users/2
+GET http://localhost:3000/users/2
 
 ####
 
 #Register a user
-POST http://localhost:5000/register
+POST http://localhost:3000/users 
 Content-type: application/json
 
 {
@@ -20,7 +20,7 @@ Content-type: application/json
 
 #login 
 
-POST http://localhost:5000/login
+POST http://localhost:3000/login
 Content-Type: application/json
 {
    "name": "Sinethemba Kunene",
@@ -30,21 +30,21 @@ Content-Type: application/json
 ######
 
 #Get all bookings
-http://localhost:5000/bookings
+http://localhost:3000/bookings
 #####
 
 #Get bookings per user
-http://localhost:5000/users/1/bookings
+http://localhost:3000/bookings?userId=1
 ######
 
-http://localhost:5000/listings
+http://localhost:3000/listings
 
 
 ######
-# POST http://localhost:5000/posts
-# content-type: application/json
+POST http://localhost:3000/posts
+content-type: application/json
 
-# {
-#     "title": "airbnb clone",
-#     "author": "KM Leshike"
-# }
+{
+    "title": "airbnb clone",
+    "author": "KM Leshike"
+}
