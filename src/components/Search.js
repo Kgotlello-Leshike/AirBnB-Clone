@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import "./Search.css";
 import "react-date-range/dist/styles.css"; //main style file
 import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
 import PeopleIcon from "@mui/icons-material/People";
-import { Button } from "@mui/material";
-import "./Search.css";
+import Button from "@mui/material/Button";
+
 
 const Search = () => {
   const [startDate, setStartDate] = useState(new Date());
